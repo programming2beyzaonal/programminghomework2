@@ -108,14 +108,13 @@ float sum2(float n){
     return n/(n+1)+sum(n-1);
   }
 }
-void printrev(char *p){
-  int i=0,size=0;
-  if(*p!='\0')
-  i++;
-  printrev(p+1);
-
-  printf("%c",*p);
-  }
+void printrev(char *p)
+{
+if(*p!='\0')
+printrev(p+1);
+  
+printf("%c",*p);   
+}
   
 int max(int arr[],int n){
   int x;
